@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteur de réponse</title>
+</head>
+<body>
+    <h1>Sélectionnez une réponse</h1>
+    <form action="ResponseHandler" method="POST">
+        <label for="username">Entrez votre nom :</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="responseType">Choisissez un type de réponse :</label>
+        <select id="responseType" name="responseType">
+            <option value="welcome">Message de bienvenue</option>
+            <option value="encouragement">Message d'encouragement</option>
+            <option value="thanks">Message de remerciement</option>
+        </select><br><br>
+        
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
