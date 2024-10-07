@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'envoi de données</title>
+</head>
+<body>
+    <h1>Formulaire d'envoi de données</h1>
+    <form action="DataReceiver" method="POST">
+        <label for="lastname">Nom :</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+        
+        <label for="firstname">Prénom :</label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+        
+        <label for="description">Description personnelle :</label><br>
+        <textarea id="description" name="description" rows="5" cols="30" required></textarea><br><br>
+        
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
